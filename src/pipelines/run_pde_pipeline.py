@@ -28,7 +28,7 @@ def run_pde_pipeline(
     """
     bronze_df = build_pde_bronze(
         spark=spark,
-        source_paths=[PDE_RAW_PATH],
+        source_path=PDE_RAW_PATH,
     )
 
     overwrite_delta_table(
